@@ -9,7 +9,7 @@ export default function Contact({ darktheme, open, submit, error, sopen, serror 
     })
 
     return (
-        <div className={`container mb-5 flex justify-center items-center flex-col`}>
+        <div className={`h-full container mb-5 flex justify-center items-center flex-col`}>
             <h1 data-aos="fade-right" className={`mt-8 text-center ${darktheme ? 'text-white':'text-black'}`}>Contact</h1>
             <Alert onClose={() => sopen(false)} dismissible className={`${open?"block":"hidden"} mt-3`} variant="success">Successfully sent message!</Alert>
             <Alert onClose={() => serror(false)} dismissible className={`${error?"block":"hidden"} mb-3`} variant="danger">Oopsie! Something went wrong!</Alert>
