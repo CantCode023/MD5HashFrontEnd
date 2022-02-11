@@ -38,7 +38,7 @@ function App() {
     const a = document.getElementById('checkvalue')
     // get id string
     const b = document.getElementById('string')
-    fetch(`check/${b.value.toString()}`).then(function(response) {
+    fetch(`https://mdhashback.herokuapp.com/check/${b.value.toString()}`).then(function(response) {
       return response.text()
     }).then(function(data) {
       a.innerHTML = data.toString()
@@ -51,7 +51,7 @@ function App() {
     const a = document.getElementById("hashvalue")
     const b = document.getElementById("string1")
     const c = document.getElementById("stringvalue")
-    fetch(`gen/${b.value.toString()}`).then(function(response) {
+    fetch(`https://mdhashback.herokuapp.com/gen/${b.value.toString()}`).then(function(response) {
       return response.text()
     }).then(function(data) {
       a.innerHTML = data.toString()
@@ -74,7 +74,7 @@ function App() {
     const name = document.getElementById("name")
     const email = document.getElementById("email")
     const message = document.getElementById("message")
-    fetch(`sendEmail?name=${name.value.toString()}&email=${email.value.toString()}&message=${message.value.toString()}`).then(function(response) {
+    fetch(`https://mdhashback.herokuapp.com/sendEmail?name=${name.value.toString()}&email=${email.value.toString()}&message=${message.value.toString()}`).then(function(response) {
       return response.text()
     }).then(function(data) {
       if (data.toString().includes("went wrong")) {
