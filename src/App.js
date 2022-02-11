@@ -101,7 +101,7 @@ function App() {
 
 
   return (
-    <div className={`h-screen font-display ${darktheme ? 'bg-neutral-900':'bg-white'}`}>
+    <div className={`font-display ${darktheme ? 'bg-neutral-900':'bg-white'}`}>
       <Router>
         {/* Navbar */}
         <NavBar darktheme={darktheme} darkmode={darkmode}/>
