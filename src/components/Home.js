@@ -21,15 +21,15 @@ function Home({ darktheme }) {
             <div data-aos="zoom-in" className="container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
                 <div className="container flex justify-center items-center flex-col">
                     <Link to="/checker" className="text-center no-underline text-white bg-sky-500 hover:bg-sky-700 ease-in-out duration-500 py-2 px-4 rounded-full ">Checker</Link>
-                    <p className={`text-center mt-4 ml-5 pb-2 ${darktheme ? 'text-white':'text-black'}`}>Checks a valid MD5 Hash.</p>
+                    <p className={`text-center mt-4 ml-5 pb-2 ${darktheme ? 'text-white':'text-black'}`}>Checks a valid MD5 Hash</p>
                 </div>
                 <div className="container flex justify-center items-center flex-col">
                     <Link to="/generator" className="text-center no-underline text-white bg-sky-500 hover:bg-sky-700 ease-in-out duration-500 py-2 px-4 rounded-full ">Generator</Link>
                     <p className={`text-center mt-4 ml-5 pb-2 ${darktheme ? 'text-white':'text-black'}`}>Converts string to MD5 Hash</p>
                 </div>  
                 <div className="container flex justify-center items-center flex-col">
-                    <Link to="/contact" className="text-center no-underline text-white bg-sky-500 hover:bg-sky-700 ease-in-out duration-500 py-2 px-4 rounded-full ">Checker</Link>
-                    <p className={`text-center mt-4 ml-5 pb-2 ${darktheme ? 'text-white':'text-black'}`}>Checks a valid MD5 Hash.</p>
+                    <Link to="/contact" className="text-center no-underline text-white bg-sky-500 hover:bg-sky-700 ease-in-out duration-500 py-2 px-4 rounded-full ">Contact</Link>
+                    <p className={`text-center mt-4 ml-5 pb-2 ${darktheme ? 'text-white':'text-black'}`}>Contact the owner of this website</p>
                 </div>
             </div>
             </div>
