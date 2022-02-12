@@ -7,6 +7,8 @@ import Checker from './components/Checker'
 import Generator from './components/Generator'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -87,6 +89,13 @@ function App() {
 
   // Set Page Title
   useEffect(() => {
+    // Global animation
+    Aos.init({
+      duration: 1000,
+      once: true
+    })
+
+    // Link System
     const url = window.location.href
     if (url.includes("/checker")) {
       document.title = "MD5 - Checker"

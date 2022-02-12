@@ -1,13 +1,6 @@
 import { Table } from 'react-bootstrap'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import React, { useEffect } from 'react'
 
 function Checker({ darktheme, show, open }) {
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, [])
-
     return (
         <div className='h-screen'>
             <div data-aos="zoom-in-up" className="container flex justify-center items-center flex-col">

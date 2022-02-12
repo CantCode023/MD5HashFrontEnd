@@ -1,13 +1,7 @@
 import Aos from 'aos'
-import 'aos/dist/aos.css'
-import React, { useEffect } from 'react'
 import { Alert } from 'react-bootstrap'
 
 export default function Contact({ darktheme, open, submit, error, sopen, serror }) {
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    })
-
     return (
         <div className="h-screen">
             <div className={`container mb-5 flex justify-center items-center flex-col`}>

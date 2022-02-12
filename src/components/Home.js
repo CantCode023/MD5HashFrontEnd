@@ -1,13 +1,6 @@
 import { Link } from 'react-router-dom'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import React, { useEffect } from 'react'
 
 function Home({ darktheme }) {
-    useEffect(() => {
-        Aos.init({ duration: 1000 })
-    }, [])
-
     return (
         <div className="container flex justify-center items-center flex-col">
             <h1 data-aos="fade-right" className={`mt-16 text-center ${darktheme ? 'text-white':'text-black'}`}>What is an MD5 Hash?</h1>
