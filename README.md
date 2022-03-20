@@ -3,6 +3,10 @@
     Checks and generates MD5 hashes.
 </div>
 
+<div align="center">
+    <a href="https://mdhash.herokuapp.com">Check the website out!</a>
+</div>
+    
 <br>
 
 <div align="center">
